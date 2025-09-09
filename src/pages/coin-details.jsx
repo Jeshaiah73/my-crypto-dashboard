@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import { Link, useParams } from "react-router";
+import Spinner from '../components/Spinner';
 const DETAIL_URL = 'https://api.coingecko.com/api/v3/coins'
 
 const CoinDetailsPage = () => {
@@ -34,7 +35,7 @@ const CoinDetailsPage = () => {
                 {coin ? `${coin.name} (${coin.symbol.toUpperCase()})` : 'Coin Details'}
             </h1>
 
-            { loading && <p>Loading...</p>}
+            { loading && <Spinner />}
             { error && <div className='error'>❌ {error}</div>}
 
             { !loading && !error && (
