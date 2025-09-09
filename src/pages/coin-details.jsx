@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import { Link, useParams } from "react-router";
 import Spinner from '../components/Spinner';
+import CoinChart from '../components/CoinChart';
 const DETAIL_URL = 'https://api.coingecko.com/api/v3/coins'
 
 const CoinDetailsPage = () => {
@@ -76,6 +77,8 @@ const CoinDetailsPage = () => {
                         Last Updated: { new Date (coin.last_updated).toLocaleDateString()} 
                     </h4>
                  </div>
+
+                 <CoinChart coinId={coin.id} />
 
                  <div className="coin-details-links">
                     {coin.links.homepage[0] && (
