@@ -42,7 +42,7 @@ const HomePage = ({
 
     return ( 
     <div>
-      <h1>Lightcrypt Dash</h1>
+      {/* <h1>Lightcrypt Dash</h1> */}
       { loading && <Spinner color='white' />}
       { error && <div className='error'>{error}</div>}
 
@@ -62,3 +62,4 @@ const HomePage = ({
 }
  
 export default HomePage ;
+

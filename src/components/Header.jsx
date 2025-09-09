@@ -1,12 +1,25 @@
-import { Link } from "react-router";
+// components/Header.jsx
+import { Link, NavLink } from "react-router";
 
 const Header = () => {
-    return ( 
-        <div className="top-nav">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-        </div>
-     );
-}
- 
+  return (
+    <nav className="navbar">
+      <div className="nav-left">
+        <Link to="/" className="logo">
+          Lightcrypt Dash
+        </Link>
+      </div>
+
+      <div className="nav-links">
+        <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>
+          Home
+        </NavLink>
+        <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>
+          About
+        </NavLink>
+      </div>
+    </nav>
+  );
+};
+
 export default Header;
