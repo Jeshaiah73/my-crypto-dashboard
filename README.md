@@ -1,7 +1,7 @@
  `README.md`.
 ---
 
-````markdown
+
 # 💹 Lightcrypt Dash
 
 A simple yet powerful **Cryptocurrency Tracker Dashboard** built with **React**.  
@@ -137,7 +137,3 @@ Full Stack Developer
 
 * 🌐 [GitHub](https://github.com/Jeshaiah73)
 * 💌 Email: [jedrac46@gmail.com](mailto:jedrac46@gmail.com)
-
----
-
-```
